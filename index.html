@@ -1,15 +1,57 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <title>Simulador de Cajero</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simulador Cajero Automático</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css" />
     <!-- JS -->
-    <script defer src="./js/main.js"></script> 
+    <script defer src="./js/main.js"></script>
 </head>
+
 <body>
-    <h1>Simulador de Cajero Automático</h1>
-    <p>
-        Este simulador permite emular las funciones básicas de un cajero automático: ingresar saldo, consultar saldo, retirar dinero y salir. 
-    </p>
+    <main>
+        <h1>Cajero Automático</h1>
+
+        <!-- Sección: Inicio de sesión -->
+        <section id="loginSection">
+            <h2>Inicio de Sesión</h2>
+            <form id="loginForm">
+                <label for="usuario">Usuario:</label>
+                <input type="text" id="usuario" required />
+
+                <label for="clave">Contraseña:</label>
+                <input type="password" id="clave" required />
+
+                <button type="submit">Ingresar</button>
+            </form>
+        </section>
+
+        <!-- Sección: Panel principal -->
+        <section id="cajeroSection" style="display: none;">
+            <h2>Bienvenido, <span id="nombreUsuario"></span></h2>
+
+            <div class="acciones">
+                <button id="consultarSaldo">Consultar Saldo</button>
+                <button id="depositar">Depositar</button>
+                <button id="retirar">Retirar</button>
+                <button id="verMovimientos">Ver Movimientos</button>
+                <button id="cerrarSesion">Cerrar Sesión</button>
+            </div>
+
+            <!-- Resultados dinámicos -->
+            <div id="resultado"></div>
+
+            <!-- Formulario de operación -->
+            <form id="operacionForm" style="display: none;">
+                <label for="monto">Monto:</label>
+                <input type="number" id="monto" required />
+                <button type="submit" id="confirmarOperacion">Confirmar</button>
+            </form>
+        </section>
+    </main>
 </body>
+
 </html>
