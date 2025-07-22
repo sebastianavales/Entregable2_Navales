@@ -1,15 +1,71 @@
-# 💫 About Me:
-Soy Ingeniero Administrador apasionado por conocimientos en tecnología,<br>Actualmente trabajo con el lenguaje de programación Python, enfocado en analítica de datos y automatización de procesos.<br>Además, me estoy formando como desarrollador full stack.
+# 📄 Proyecto Final - Simulador de Cajero Automático
 
-
-## 🌐 Socials:
-[![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?logo=Instagram&logoColor=white)](https://instagram.com/sebastian.navales) [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/sebastian-navales-parra) 
-
-# 💻 Tech Stack:
-![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white) ![Azure](https://img.shields.io/badge/azure-%230072C6.svg?style=for-the-badge&logo=microsoftazure&logoColor=white) ![Bootstrap](https://img.shields.io/badge/bootstrap-%238511FA.svg?style=for-the-badge&logo=bootstrap&logoColor=white) ![Teradata](https://img.shields.io/badge/Teradata-F37440?style=for-the-badge&logo=teradata&logoColor=white) ![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white) ![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white) ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
-# 📊 GitHub Stats:
-![](https://github-readme-stats.vercel.app/api?username=sebastianavales&theme=dark&hide_border=false&include_all_commits=true&count_private=false)<br/>
-![](https://nirzak-streak-stats.vercel.app/?user=sebastianavales&theme=dark&hide_border=false)<br/>
-![](https://github-readme-stats.vercel.app/api/top-langs/?username=sebastianavales&theme=dark&hide_border=false&include_all_commits=true&count_private=false&layout=compact)
+**Autor:** Sebastián Navales Parra  
+**Curso:** JavaScript - Coderhouse  
+**Entrega:** Proyecto Final
 
 ---
+
+## 🧩 Descripción general
+
+Este proyecto simula el funcionamiento básico de un cajero automático desde el navegador, permitiendo:
+
+- Registro de nuevos usuarios con contraseña  
+- Inicio de sesión con validación  
+- Visualización de saldo  
+- Depósitos y retiros  
+- Historial de movimientos  
+- Persistencia de datos mediante `localStorage`
+
+---
+
+## 🚀 ¿Cómo usarlo?
+
+1. Accede al simulador desde el sitio desplegado en **GitHub Pages**
+
+2. En la pantalla de inicio:
+
+   - Si ya tienes una cuenta, **ingresa tu usuario y contraseña** y haz clic en **"Iniciar sesión"**.  
+     > Nota: Hay dos usuarios simulados en base de datos, en el archivo `usuarios.json` ubicado en la carpeta `data`.
+
+   - Si eres nuevo, **ingresa un usuario y contraseña** y se te dará la opción de crear la cuenta.  
+     - Se creará con un saldo inicial de `$0.00`.  
+     - **No se permite reutilizar nombres de usuario ya registrados.**
+
+3. Una vez dentro podrás:
+
+   - Consultar tu saldo  
+   - Realizar depósitos y retiros  
+   - Ver el historial de movimientos  
+   - Borrar los movimientos  
+   - Cerrar sesión
+
+> Toda la información se guarda en `localStorage` del navegador, lo que permite mantener los datos incluso si se recarga la página o se cierra el navegador.
+
+---
+
+## 🔐 Información clave sobre usuarios
+
+- Cada usuario debe tener un **nombre único**.  
+- Si el nombre ya existe, solo se podrá acceder ingresando la **contraseña correcta**.  
+- Actualmente **no es posible modificar la contraseña desde la interfaz**.
+
+---
+
+## 📁 Estructura del proyecto
+
+ProyectoFinalNavales/
+│
+├── index.html
+├── css/
+│ └── styles.css
+├── data/
+│ └── usuarios.json
+├── js/
+│ ├── clases.js
+│ └── main.js
+└── README.md
+
+---
+
+¡Gracias por revisar el proyecto!
