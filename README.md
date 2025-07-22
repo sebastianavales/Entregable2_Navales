@@ -52,20 +52,19 @@ Este proyecto simula el funcionamiento básico de un cajero automático desde el
 
 ---
 
+¡Gracias por revisar el proyecto!
+
 ## 📁 Estructura del proyecto
 
+```plaintext
 ProyectoFinalNavales/
 │
 ├── index.html
 ├── css/
-│ └── styles.css
+│   └── styles.css
 ├── data/
-│ └── usuarios.json
+│   └── usuarios.json
 ├── js/
-│ ├── clases.js
-│ └── main.js
+│   ├── clases.js
+│   └── main.js
 └── README.md
-
----
-
-¡Gracias por revisar el proyecto!
